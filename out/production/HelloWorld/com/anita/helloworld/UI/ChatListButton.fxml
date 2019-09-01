@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root type="javafx.scene.control.Button" mnemonicParsing="false" prefHeight="109.0" prefWidth="535.0" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@../css/ChatListStyle.css" styleClass="list,button">
+    <graphic>
+        <Group>
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="480.0">
+                    <children>
+                        <ImageView fitHeight="93.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" fx:id="user_img">
+
+                        </ImageView>
+                        <VBox prefHeight="100.0">
+                            <children>
+                                <HBox alignment="CENTER_LEFT" prefHeight="33.0" spacing="5.0">
+                                    <children>
+                                        <Label prefHeight="22.0" styleClass="name" fx:id="user_id" />
+                                        <ImageView fitHeight="10.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" fx:id="user_online">
+
+                                            <HBox.margin>
+                                                <Insets left="10.0" />
+                                            </HBox.margin>
+                                        </ImageView>
+                                        <Label fx:id="user_linword"  />
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets top="5.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <Label prefHeight="63.0" fx:id="user_word" />
+                            </children>
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </Group>
+    </graphic>
+</fx:root>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root type="javafx.scene.layout.HBox" alignment="BOTTOM_LEFT" spacing="10.0" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@../css/ChatRoomStyle.css">
+    <children>
+        <Label fx:id="message" alignment="CENTER" maxWidth="400.0" styleClass="text_other" wrapText="true">
+            <padding>
+                <Insets left="10.0" right="10.0" bottom="5.0" top="5.0"/>
+            </padding>
+        </Label>
+        <Label alignment="BOTTOM_LEFT" styleClass="time" fx:id="time"/>
+    </children>
+</fx:root>
+
+
