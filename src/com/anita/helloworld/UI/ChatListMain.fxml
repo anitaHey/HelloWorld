@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.media.*?>
-<?import javafx.scene.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
-<?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
 
 <Pane prefHeight="200.0"
-         prefWidth="200.0" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@../css/ChatListStyle.css"
-         xmlns="http://javafx.com/javafx/8" fx:id="pane">
+      prefWidth="200.0"
+      xmlns:fx="http://javafx.com/fxml/1"
+      stylesheets="@../css/ChatListStyle.css"
+      xmlns="http://javafx.com/javafx/8"
+      fx:id="pane">
     <children>
-        <ScrollPane fitToWidth="true" layoutX="-3.0" layoutY="1.0"
-                    prefHeight="561.0" prefWidth="557.0" styleClass="scrollpane">
+        <ScrollPane fitToWidth="true"
+                    layoutX="-3.0"
+                    layoutY="1.0"
+                    prefHeight="561.0"
+                    prefWidth="557.0"
+                    styleClass="scrollpane">
             <content>
-                <VBox layoutX="7.0" layoutY="4.0" prefHeight="558.0" prefWidth="547.0"
-                      styleClass="list" fx:id="vbox">
+                <VBox layoutX="7.0"
+                      layoutY="4.0"
+                      prefHeight="558.0"
+                      prefWidth="547.0"
+                      styleClass="list"
+                      fx:id="vbox">
                     <children>
                     </children>
                 </VBox>

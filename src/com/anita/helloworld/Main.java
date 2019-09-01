@@ -22,23 +22,28 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws IOException {
         Scene scene = new Scene(new StackPane());
         Locale.setDefault(Locale.ENGLISH);
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("UI/MainUI.fxml"));
+        FXMLLoader loader = new FXMLLoader(
+                getClass().getResource("UI/MainUI.fxml"));
         scene.setRoot(loader.load());
-        scene.getStylesheets().add("https://fonts.googleapis.com/css?family=Concert+One");
-        scene.getStylesheets().add("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+        scene.getStylesheets().add(
+                "https://fonts.googleapis.com/css?family=Concert+One");
+        scene.getStylesheets().add(
+                "https://fonts.googleapis.com/css?family=Luckiest+Guy");
         primaryStage.setTitle("HELLO.WORLD");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
 
     @FXML
-    Button menu_button_hello,menu_button_list,menu_button_chat,menu_button_game,menu_button_setting,menu_button_logout;
+    Button menu_button_hello,menu_button_list,menu_button_chat,
+            menu_button_game,menu_button_setting,menu_button_logout;
     @FXML
     Pane pane_hello,pane_list,pane_game,pane_setting,pane_chat;
 
 
     public void initialize() {
-        menu_button_hello.pseudoClassStateChanged(PseudoClassState.getPseudoClass("bgc"), true);
+        menu_button_hello.pseudoClassStateChanged
+                (PseudoClassState.getPseudoClass("bgc"), true);
         menu_button_hello.setOnAction(e -> choice(0));
         menu_button_list.setOnAction(e -> choice(1));
         menu_button_chat.setOnAction(e -> choice(2));
@@ -81,14 +86,21 @@ public class Main extends Application {
         }
     }
     public void setColor(Button choice) {
-        menu_button_hello.pseudoClassStateChanged(PseudoClassState.getPseudoClass("bgc"), false);
-        menu_button_list.pseudoClassStateChanged(PseudoClassState.getPseudoClass("bgc"), false);
-        menu_button_chat.pseudoClassStateChanged(PseudoClassState.getPseudoClass("bgc"), false);
-        menu_button_game.pseudoClassStateChanged(PseudoClassState.getPseudoClass("bgc"), false);
-        menu_button_setting.pseudoClassStateChanged(PseudoClassState.getPseudoClass("bgc"), false);
-        menu_button_logout.pseudoClassStateChanged(PseudoClassState.getPseudoClass("bgc"), false);
+        menu_button_hello.pseudoClassStateChanged(
+                PseudoClassState.getPseudoClass("bgc"), false);
+        menu_button_list.pseudoClassStateChanged(
+                PseudoClassState.getPseudoClass("bgc"), false);
+        menu_button_chat.pseudoClassStateChanged(
+                PseudoClassState.getPseudoClass("bgc"), false);
+        menu_button_game.pseudoClassStateChanged(
+                PseudoClassState.getPseudoClass("bgc"), false);
+        menu_button_setting.pseudoClassStateChanged(
+                PseudoClassState.getPseudoClass("bgc"), false);
+        menu_button_logout.pseudoClassStateChanged
+                (PseudoClassState.getPseudoClass("bgc"), false);
 
-        choice.pseudoClassStateChanged(PseudoClassState.getPseudoClass("bgc"), true);
+        choice.pseudoClassStateChanged(
+                PseudoClassState.getPseudoClass("bgc"), true);
     }
     public void setPane(Pane choice) {
         pane_hello.setVisible(false);

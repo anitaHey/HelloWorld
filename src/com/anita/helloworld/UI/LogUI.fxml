@@ -2,22 +2,70 @@
 
 <?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
-<?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="367.0" styleClass="login_main" stylesheets="@../css/MainStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity"
+            maxWidth="-Infinity"
+            minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="541.0"
+            prefWidth="367.0"
+            styleClass="login_main"
+            stylesheets="@../css/MainStyle.css"
+            xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <Label layoutX="36.0" layoutY="199.0" styleClass="login_label" text="Account" />
-        <Label layoutX="36.0" layoutY="259.0" styleClass="login_label" text="Password" />
-        <TextField fx:id="login_account" layoutX="143.0" layoutY="194.0" prefHeight="41.0" prefWidth="193.0" promptText="Enter account" styleClass="login_text" />
-        <Button fx:id="login_button" layoutX="111.0" layoutY="337.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="145.0" styleClass="login_button" text="LogIn" />
-        <Button fx:id="create_button" layoutX="117.0" layoutY="499.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="233.0" styleClass="create_button" text="Create a new Account" />
-        <PasswordField fx:id="login_password" layoutX="143.0" layoutY="254.0" prefHeight="41.0" prefWidth="193.0" promptText="Enter password" styleClass="login_text" />
-        <HBox alignment="CENTER" layoutX="5.0" layoutY="62.0" prefHeight="70.0" prefWidth="348.0">
+        <Label layoutX="36.0"
+               layoutY="199.0"
+               styleClass="login_label"
+               text="Account" />
+        <Label layoutX="36.0"
+               layoutY="259.0"
+               styleClass="login_label"
+               text="Password" />
+        <TextField fx:id="login_account"
+                   layoutX="143.0"
+                   layoutY="194.0"
+                   prefHeight="41.0"
+                   prefWidth="193.0"
+                   promptText="Enter account"
+                   styleClass="login_text" />
+        <Button fx:id="login_button"
+                layoutX="111.0"
+                layoutY="337.0"
+                mnemonicParsing="false"
+                prefHeight="36.0"
+                prefWidth="145.0"
+                styleClass="login_button"
+                text="LogIn" />
+        <Button fx:id="create_button"
+                layoutX="117.0"
+                layoutY="499.0"
+                mnemonicParsing="false"
+                prefHeight="34.0"
+                prefWidth="233.0"
+                styleClass="create_button"
+                text="Create a new Account" />
+        <PasswordField fx:id="login_password"
+                       layoutX="143.0"
+                       layoutY="254.0"
+                       prefHeight="41.0"
+                       prefWidth="193.0"
+                       promptText="Enter password"
+                       styleClass="login_text" />
+        <HBox alignment="CENTER"
+              layoutX="5.0"
+              layoutY="62.0"
+              prefHeight="70.0"
+              prefWidth="348.0">
             <children>
-                <Label styleClass="login_title" text="HELLO.WORLD" />
+                <Label styleClass="login_title"
+                       text="HELLO.WORLD" />
                 <Label text=" " />
-                <ImageView fitHeight="39.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fitHeight="39.0"
+                           fitWidth="44.0"
+                           pickOnBounds="true"
+                           preserveRatio="true">
                     <image>
                         <Image url="@../image/smile.png" />
                     </image>
